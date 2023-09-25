@@ -55,3 +55,11 @@ Cosas que quiero hacer en un futuro:
 -mas entidades 3D, como TOROIDES o superfices de barrido
 -creacion de superficies Bezier
 -colores independientes en el resultado
+
+
+Para poder ver los ficheros de salida resultantes con extensión BIN, usaremos el visualizar que viene con los ejemplos del código original, en la carpeta
+"\engine (build 1691)\C++\3DEditor\x64\Release\"
+
+![Imagen csgpkg1.jpg](https://github.com/jepalza/FB_REAL_CSG/blob/main/fotos/csgpkg1.jpg)
+![Imagen csgpkg2.jpg](https://github.com/jepalza/FB_REAL_CSG/blob/main/fotos/csgpkg2.jpg)
+![Imagen csgpkg4.jpg](https://github.com/jepalza/FB_REAL_CSG/blob/main/fotos/csgpkg4.jpg)
