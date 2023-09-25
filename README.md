@@ -25,3 +25,33 @@ En esta ocasión, solo he convertido la cabecera principal de los ejemplos del c
 "engine.h" de la carpeta "\engine (build 1691)\engine-20230426\include\", por ser el mas indicado para mi prueba.
 
 
+Esta DLL es bastante compleja de controlar, dado que emplea mucho de C++ con herencias a objetos y clases.
+Para lograr una simple operación de resta de sólidos, son necesario muchos pasos. 
+Dejo varios ejemplos convertidos directos desde C++ a FreeBasic y uno principal mucho mas completo y complejo que permite realizar
+operaciones booleanas complejas.
+
+En este fichero principal, podemos crear una entidad de salida booleana, mediante comandos sencillos al estilo:
+[code]
+	objeto(4).tipo="Sphere"
+	objeto(4).radio=10
+	objeto(4).segmentos=40
+	CreaEntidad(4)
+	posicion(4,20.7,4.94,4.94)
+	giroy(3,45)
+[/code]
+la forma de creacion es un tanto extraña, pero funciona, que es lo importante.
+Lo que hacemos es crear una entidad vacia genérica de forma predeterminada ("Sphere" en este caso) y seguido, le aplicamos
+una translación y un giro.
+
+En un princpio, dado que para mi ejemplo solo necesitaba entidades sencillas, como esfera, cono y cubo, son las únicas entidades
+por ahora que admite directamente. Para otras entidades 3D habría que añadir elementos que las trate. (dejo tambien un avance en entidades
+tipo "toroidal", pero que daba algún problema, no está probada al 100%)
+
+De todas las llamadas que están en el fichero de inclusión del FB, solo he probado menos del 10%, para el caso que he necesitado.
+Deberían funcionar todas, pero no es fácil probar una a una.
+
+Cosas que quiero hacer en un futuro:
+-exportar como IGES
+-mas entidades 3D, como TOROIDES o superfices de barrido
+-creacion de superficies Bezier
+-colores independientes en el resultado
